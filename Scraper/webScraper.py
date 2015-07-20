@@ -2,6 +2,11 @@ import requests
 import json
 from bs4 import BeautifulSoup
 
+# Save site url in a variable
+URL_Root = "http://wiki.teamliquid.net/"
+DEFAULT_DEST = "/smash//Frame_Data"
+CHARACTER_LIST = ['Fox','Falco','Sheik','Marth','Jigglypuff','Peach','Captain_Falcon','Luigi','Roy']
+
 # Pull the site into the smashBoards variable
 smashBoards = requests.get("")
 
