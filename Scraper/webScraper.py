@@ -12,7 +12,7 @@ def request_page(link):
     return webpage
 
 def parse_info(webpage):
-    article_tag = webpage.find_all('article')[1]
+    article_tag = webpage.find_all('article',limit = 1)
     print(article_tag.contents)
 
 page = request_page(URL)
