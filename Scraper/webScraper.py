@@ -12,10 +12,11 @@ def request_page(link):
     return webpage
 
 def parse_info(webpage):
-    print(webpage.article.text)
+    return webpage.article.text
 
 page = request_page(URL)
-parse_info(page)
+pageText = parse_info(page)
 
 # Creates a file to hold the data
-# dataFile = open(input("Enter the name of the file: ", "w"))
+# dataFile = open(input("Enter the name of the file: "), "w")
+# dataFile.write(pageText)
